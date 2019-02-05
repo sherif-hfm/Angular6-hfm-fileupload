@@ -1,6 +1,6 @@
 <br>
 <form [formGroup]="myForm" (ngSubmit)="onSubmit()" >
-<input formControlName="myfile" type="file" placeholder="select file" (change)="handleFileInput($event.target.files)">
+<input multiple formControlName="myfile" type="file" placeholder="select file" (change)="handleFileInput($event.target.files)">
 <br>
 <button type="submit"  [disabled]="!myForm.valid">Save</button>
 </form>
